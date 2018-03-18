@@ -2,6 +2,7 @@ package com.ctrip.corp.demo;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -16,9 +17,13 @@ public class TestPart1 {
 
         List<String> beginningWithNumbers
                 = Stream.of("a", "1abc", "abc1")
-                .filter(value -> isDigit(value.charAt(0)))
+                .filter(value -> isDigit(value.charAt(0))).peek(x -> System.out.print("中间值：" + x))
                 .collect(toList());
 
         assertEquals(asList("1abc"), beginningWithNumbers);
+
+        List<Integer> intList = new ArrayList<>();
+
+
     }
 }
