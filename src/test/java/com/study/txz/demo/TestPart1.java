@@ -1,4 +1,4 @@
-package com.ctrip.corp.demo;
+package com.study.txz.demo;
 
 import org.junit.Test;
 

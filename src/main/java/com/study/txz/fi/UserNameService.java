@@ -1,4 +1,4 @@
-package com.ctrip.corp.fi;
+package com.study.txz.fi;
 
 @FunctionalInterface
 public interface UserNameService{

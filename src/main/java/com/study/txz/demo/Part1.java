@@ -1,6 +1,6 @@
-package com.ctrip.corp.demo;
+package com.study.txz.demo;
 
-import com.ctrip.corp.fi.UserNameService;
+import com.study.txz.fi.UserNameService;
 
 import java.util.function.BinaryOperator;
 import java.util.function.Predicate;
