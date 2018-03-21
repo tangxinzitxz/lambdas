@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import static java.util.stream.Collectors.toList;
+
 /**
  * Created by tangxz on 2018-03-21.
  */
@@ -19,7 +21,7 @@ public class Part6 {
 
         long begin = System.currentTimeMillis();
 
-        list.stream().filter((i) -> (i % 2 == 0));
+        list.stream().filter((i) -> (i % 2 == 0)).collect(toList());
 
         long end = System.currentTimeMillis();
 
@@ -27,12 +29,12 @@ public class Part6 {
 
         long begin1 = System.currentTimeMillis();
 
-        list.stream().filter(new Predicate<Integer>(){
+        list.stream().filter(new Predicate<Integer>() {
             @Override
             public boolean test(Integer i) {
                 return i % 2 == 0;
             }
-        });
+        }).collect(toList());
 
         long end1 = System.currentTimeMillis();
 
