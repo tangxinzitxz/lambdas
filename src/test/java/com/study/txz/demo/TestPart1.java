@@ -22,8 +22,6 @@ public class TestPart1 {
 
         assertEquals(asList("1abc"), beginningWithNumbers);
 
-        List<Integer> intList = new ArrayList<>();
-
 
     }
 }

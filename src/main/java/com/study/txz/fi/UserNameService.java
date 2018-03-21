@@ -4,7 +4,11 @@ package com.study.txz.fi;
 public interface UserNameService{
     void printName();
 
-    default int add(int a,int b){
-        return a+b;
-    }
+
+    boolean equals(Object obj);
+
+
+//    default int add(int a,int b){
+//        return a+b;
+//    }
 }
